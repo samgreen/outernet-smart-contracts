@@ -3637,6 +3637,12 @@
     "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0xF9eBD55497AAc29B2f7E474Fa5eAC0B28cE5ec72",
+      "transactionHash": "0x274adbf6d1bed6a712a9b3f80fff5bac014b99029a25b097e5adb52d6cf5504e"
+    },
     "5777": {
       "events": {},
       "links": {},
@@ -3645,7 +3651,7 @@
     }
   },
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T03:00:03.410Z",
+  "updatedAt": "2020-07-18T08:38:37.099Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Math operations with safety checks that throw on error. This contract is based on the source code at: https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/math/SafeMath.sol.",

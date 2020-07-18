@@ -901,6 +901,12 @@
     "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0xA6acd591EA190178bFD0D48d3D8ad4D4F642cE5d",
+      "transactionHash": "0x1beafe83ec9f9932b634b26ce7b26c821ead5b490d6ca5a88f7c13642ccad2ec"
+    },
     "5777": {
       "events": {},
       "links": {},
@@ -909,7 +915,7 @@
     }
   },
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T03:00:03.427Z",
+  "updatedAt": "2020-07-18T08:38:37.118Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Utility library of inline functions on addresses.",
