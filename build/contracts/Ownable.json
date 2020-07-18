@@ -36,7 +36,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -49,7 +50,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -62,7 +64,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -1870,9 +1873,37 @@
     "name": "solc",
     "version": "0.6.11+commit.5ef660b1.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "3": {
+      "events": {
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x58f4328E13263fe7020a045fC0a992798AdA2215",
+      "transactionHash": "0xcf1c56dc899af724bad93c2ad974cf4c846c6ff0ca6c321e21817448d5b55b9e"
+    }
+  },
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T09:49:54.694Z",
+  "updatedAt": "2020-07-18T09:59:12.545Z",
+  "networkType": "ethereum",
   "devdoc": {
     "details": "The contract has an owner address, and provides basic authorization control whitch simplifies the implementation of user permissions. This contract is based on the source code at: https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/ownership/Ownable.sol",
     "events": {

@@ -23,7 +23,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.6.11+commit.5ef660b1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"_interfaceID\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Implementation of standard for detect smart contract interfaces.\",\"kind\":\"dev\",\"methods\":{\"constructor\":{\"details\":\"Contract constructor.\"},\"supportsInterface(bytes4)\":{\"details\":\"Function to check which interfaces are suported by this contract.\",\"params\":{\"_interfaceID\":\"Id of the interface.\"},\"returns\":{\"_0\":\"True if _interfaceID is supported, false otherwise.\"}}},\"stateVariables\":{\"supportedInterfaces\":{\"details\":\"Mapping of supported intefraces. You must not set element 0xffffffff to true.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/c/Users/Sam/Documents/crypto-clicker/contracts/utils/supports-interface.sol\":\"SupportsInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/c/Users/Sam/Documents/crypto-clicker/contracts/utils/erc165.sol\":{\"keccak256\":\"0x4200e6e09ecb88dd6e25a2f20cfb7b629195642759f827167b80e729cd28db2d\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://399a7e65a6b7a22634b14e8580a363062a576a944c65422646599ea1e9f3a976\",\"dweb:/ipfs/QmWSfoALnPfyBCVsyoWmc9P3VHEwgSWM5J9LoU6Rtnnnax\"]},\"/mnt/c/Users/Sam/Documents/crypto-clicker/contracts/utils/supports-interface.sol\":{\"keccak256\":\"0xe8cabf8538d4c1277694ad96ed34ead54f8aa8d05188c7692cb86e7c0b85ce75\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://4dfe91492cf18e94aac2b8768d4dd5d748906ad7ebfc91f862b4374a519b75a3\",\"dweb:/ipfs/QmQZofj4ggoAZKzZQZyGjNknhVJdXNiavyJg6nYKxH6ELF\"]}},\"version\":1}",
@@ -860,9 +861,17 @@
     "name": "solc",
     "version": "0.6.11+commit.5ef660b1.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0x93e8d29504EC496C829FbBABE2401239bd75f65C",
+      "transactionHash": "0x4796b75088e9a2e7f936cc4dd224c5ed101d1c50eb955bf0e2a46ac47393d415"
+    }
+  },
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T09:49:54.785Z",
+  "updatedAt": "2020-07-18T09:59:12.557Z",
+  "networkType": "ethereum",
   "devdoc": {
     "details": "Implementation of standard for detect smart contract interfaces.",
     "kind": "dev",

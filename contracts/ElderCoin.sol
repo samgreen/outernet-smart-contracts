@@ -20,7 +20,7 @@ contract ElderCoin is
     constructor()
     public
     {
-        nftName = "Outernet Original Founder";
+        nftName = "Outernet Founder Coin";
         nftSymbol = "OUTF";
     }
 

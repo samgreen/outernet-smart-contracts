@@ -3755,9 +3755,17 @@
     "name": "solc",
     "version": "0.6.11+commit.5ef660b1.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0x32a7F9A87b1A7556fdEE05141eadD864E130f88B",
+      "transactionHash": "0x86f5d3b2d48a4485ba772cc919cc0d829b4946df6ee40e2a557f98ffa767d6f2"
+    }
+  },
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T09:49:54.648Z",
+  "updatedAt": "2020-07-18T09:59:12.548Z",
+  "networkType": "ethereum",
   "devdoc": {
     "details": "Math operations with safety checks that throw on error. This contract is based on the source code at: https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/math/SafeMath.sol.",
     "kind": "dev",
