@@ -1,0 +1,18 @@
+{
+    "title": "Asset Metadata",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Outernet Coin of the Elders"
+        },
+        "description": {
+            "type": "string",
+            "description": "This coin identifies the owner as an elder to the collective and bestoys upon them all benefits thus associated."
+        },
+        "image": {
+            "type": "string",
+            "description": "https://example.com/image.png"
+        }
+    }
+}
