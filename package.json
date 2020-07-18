@@ -9,19 +9,20 @@
   "scripts": {
     "compile": "truffle compile",
     "test": "truffle test --network development",
+    "test:ropsten": "truffle test --network ropsten",
     "deploy:teams": "truffle migrate --network teams",
-    "clean": "rm -rf ./build/ && truffle compile"
+    "deploy:ropsten": "truffle migrate --network ropsten",
+    "clean": "rm -rf ./build/ && npm run compile"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@0xcert/ethereum-erc721": "^2.2.0",
-    "@truffle/contract": "^4.2.13",
-    "truffle-hdwallet-provider": "^1.0.17"
+    "@truffle/contract": "^4.2.13"
   },
   "devDependencies": {
     "source-verify": "github:ethereum/sourcify",
     "truffle-hdwallet-provider-privkey": "^0.3.0",
+    "truffle-hdwallet-provider": "^1.0.17",
     "truffle-plugin-verify": "^0.3.11"
   }
 }

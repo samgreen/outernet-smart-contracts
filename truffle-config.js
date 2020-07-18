@@ -7,7 +7,7 @@ const TRUFFLE_SANDBOX_KEY = process.env.TRUFFLE_SANDBOX_KEY
 module.exports = {
   compilers: {
     solc: {
-      version: "0.6.2",
+      version: "0.6.11",
     },
   },
   plugins: [

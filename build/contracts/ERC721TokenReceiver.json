@@ -36,52 +36,68 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_operator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"onERC721Received\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"ERC-721 interface for accepting safe transfers. See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md.\",\"methods\":{\"onERC721Received(address,address,uint256,bytes)\":{\"details\":\"Handle the receipt of a NFT. The ERC721 smart contract calls this function on the recipient after a `transfer`. This function MAY throw to revert and reject the transfer. Return of other than the magic value MUST result in the transaction being reverted. Returns `bytes4(keccak256(\\\"onERC721Received(address,address,uint256,bytes)\\\"))` unless throwing.\",\"params\":{\"_data\":\"Additional data with no specified format.\",\"_from\":\"The address which previously owned the token.\",\"_operator\":\"The address which called `safeTransferFrom` function.\",\"_tokenId\":\"The NFT identifier which is being transferred.\"},\"returns\":{\"_0\":\"Returns `bytes4(keccak256(\\\"onERC721Received(address,address,uint256,bytes)\\\"))`.\"}}}},\"userdoc\":{\"methods\":{\"onERC721Received(address,address,uint256,bytes)\":{\"notice\":\"The contract address is always the message sender. A wallet/broker/auction application MUST implement the wallet interface if it will accept safe transfers.\"}}}},\"settings\":{\"compilationTarget\":{\"/mnt/c/Users/Sam/Documents/crypto-clicker/node_modules/@0xcert/ethereum-erc721/src/contracts/tokens/erc721-token-receiver.sol\":\"ERC721TokenReceiver\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/c/Users/Sam/Documents/crypto-clicker/node_modules/@0xcert/ethereum-erc721/src/contracts/tokens/erc721-token-receiver.sol\":{\"keccak256\":\"0xd7fb67125fb77c8d21f62ff1ee389fd10b1aa8eae68725710d2a377664fd7892\",\"urls\":[\"bzz-raw://c367eecf257999db17e27f0be1623def86a9e50ea9c89ee8a4a69a401692fbdb\",\"dweb:/ipfs/QmY5Jeg16wMsWYrH58uT2xmTNLvJey3668eURPb98x2h3M\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.11+commit.5ef660b1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_operator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"onERC721Received\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"ERC-721 interface for accepting safe transfers. See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md.\",\"kind\":\"dev\",\"methods\":{\"onERC721Received(address,address,uint256,bytes)\":{\"details\":\"Handle the receipt of a NFT. The ERC721 smart contract calls this function on the recipient after a `transfer`. This function MAY throw to revert and reject the transfer. Return of other than the magic value MUST result in the transaction being reverted. Returns `bytes4(keccak256(\\\"onERC721Received(address,address,uint256,bytes)\\\"))` unless throwing.\",\"params\":{\"_data\":\"Additional data with no specified format.\",\"_from\":\"The address which previously owned the token.\",\"_operator\":\"The address which called `safeTransferFrom` function.\",\"_tokenId\":\"The NFT identifier which is being transferred.\"},\"returns\":{\"_0\":\"Returns `bytes4(keccak256(\\\"onERC721Received(address,address,uint256,bytes)\\\"))`.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"onERC721Received(address,address,uint256,bytes)\":{\"notice\":\"The contract address is always the message sender. A wallet/broker/auction application MUST implement the wallet interface if it will accept safe transfers.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/c/Users/Sam/Documents/crypto-clicker/contracts/tokens/erc721-token-receiver.sol\":\"ERC721TokenReceiver\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/c/Users/Sam/Documents/crypto-clicker/contracts/tokens/erc721-token-receiver.sol\":{\"keccak256\":\"0xde219c33e957b76ef8f946835194e7b80294cb034e0b59b51fd361addd021c6c\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://e625a544cc9689c17ea6226f2fad757f56a1cdf794f485e63740231324ab88b6\",\"dweb:/ipfs/Qmd2xWP2TRDLCwgYczXDFpQrJH1KUo5SgknihYExe8Kg1s\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
+  "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity 0.6.2;\n\n/**\n * @dev ERC-721 interface for accepting safe transfers.\n * See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md.\n */\ninterface ERC721TokenReceiver\n{\n\n  /**\n   * @dev Handle the receipt of a NFT. The ERC721 smart contract calls this function on the\n   * recipient after a `transfer`. This function MAY throw to revert and reject the transfer. Return\n   * of other than the magic value MUST result in the transaction being reverted.\n   * Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))` unless throwing.\n   * @notice The contract address is always the message sender. A wallet/broker/auction application\n   * MUST implement the wallet interface if it will accept safe transfers.\n   * @param _operator The address which called `safeTransferFrom` function.\n   * @param _from The address which previously owned the token.\n   * @param _tokenId The NFT identifier which is being transferred.\n   * @param _data Additional data with no specified format.\n   * @return Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`.\n   */\n  function onERC721Received(\n    address _operator,\n    address _from,\n    uint256 _tokenId,\n    bytes calldata _data\n  )\n    external\n    returns(bytes4);\n\n}\n",
-  "sourcePath": "/mnt/c/Users/Sam/Documents/crypto-clicker/node_modules/@0xcert/ethereum-erc721/src/contracts/tokens/erc721-token-receiver.sol",
+  "source": "// SPDX-License-Identifier: UNLICENSED\n\npragma solidity >=0.4.25 <0.7.0;\n\n/**\n * @dev ERC-721 interface for accepting safe transfers.\n * See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md.\n */\ninterface ERC721TokenReceiver\n{\n\n  /**\n   * @dev Handle the receipt of a NFT. The ERC721 smart contract calls this function on the\n   * recipient after a `transfer`. This function MAY throw to revert and reject the transfer. Return\n   * of other than the magic value MUST result in the transaction being reverted.\n   * Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))` unless throwing.\n   * @notice The contract address is always the message sender. A wallet/broker/auction application\n   * MUST implement the wallet interface if it will accept safe transfers.\n   * @param _operator The address which called `safeTransferFrom` function.\n   * @param _from The address which previously owned the token.\n   * @param _tokenId The NFT identifier which is being transferred.\n   * @param _data Additional data with no specified format.\n   * @return Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`.\n   */\n  function onERC721Received(\n    address _operator,\n    address _from,\n    uint256 _tokenId,\n    bytes calldata _data\n  )\n    external\n    returns(bytes4);\n\n}\n",
+  "sourcePath": "/mnt/c/Users/Sam/Documents/crypto-clicker/contracts/tokens/erc721-token-receiver.sol",
   "ast": {
-    "absolutePath": "/mnt/c/Users/Sam/Documents/crypto-clicker/node_modules/@0xcert/ethereum-erc721/src/contracts/tokens/erc721-token-receiver.sol",
+    "absolutePath": "/mnt/c/Users/Sam/Documents/crypto-clicker/contracts/tokens/erc721-token-receiver.sol",
     "exportedSymbols": {
       "ERC721TokenReceiver": [
-        328
+        696
       ]
     },
-    "id": 329,
+    "id": 697,
+    "license": "UNLICENSED",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 314,
+        "id": 680,
         "literals": [
           "solidity",
-          "0.6",
-          ".2"
+          ">=",
+          "0.4",
+          ".25",
+          "<",
+          "0.7",
+          ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:22:5"
+        "src": "40:32:10"
       },
       {
         "abstract": false,
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "interface",
-        "documentation": "@dev ERC-721 interface for accepting safe transfers.\nSee https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md.",
+        "documentation": {
+          "id": 681,
+          "nodeType": "StructuredDocumentation",
+          "src": "74:132:10",
+          "text": " @dev ERC-721 interface for accepting safe transfers.\n See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md."
+        },
         "fullyImplemented": false,
-        "id": 328,
+        "id": 696,
         "linearizedBaseContracts": [
-          328
+          696
         ],
         "name": "ERC721TokenReceiver",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": null,
-            "documentation": "@dev Handle the receipt of a NFT. The ERC721 smart contract calls this function on the\nrecipient after a `transfer`. This function MAY throw to revert and reject the transfer. Return\nof other than the magic value MUST result in the transaction being reverted.\nReturns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))` unless throwing.\n@notice The contract address is always the message sender. A wallet/broker/auction application\nMUST implement the wallet interface if it will accept safe transfers.\n@param _operator The address which called `safeTransferFrom` function.\n@param _from The address which previously owned the token.\n@param _tokenId The NFT identifier which is being transferred.\n@param _data Additional data with no specified format.\n@return Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`.",
+            "documentation": {
+              "id": 682,
+              "nodeType": "StructuredDocumentation",
+              "src": "242:921:10",
+              "text": " @dev Handle the receipt of a NFT. The ERC721 smart contract calls this function on the\n recipient after a `transfer`. This function MAY throw to revert and reject the transfer. Return\n of other than the magic value MUST result in the transaction being reverted.\n Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))` unless throwing.\n @notice The contract address is always the message sender. A wallet/broker/auction application\n MUST implement the wallet interface if it will accept safe transfers.\n @param _operator The address which called `safeTransferFrom` function.\n @param _from The address which previously owned the token.\n @param _tokenId The NFT identifier which is being transferred.\n @param _data Additional data with no specified format.\n @return Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`."
+            },
             "functionSelector": "150b7a02",
-            "id": 327,
+            "id": 695,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -89,17 +105,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 323,
+              "id": 691,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 316,
+                  "id": 684,
+                  "mutability": "mutable",
                   "name": "_operator",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 327,
-                  "src": "1147:17:5",
+                  "scope": 695,
+                  "src": "1197:17:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -107,10 +124,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 315,
+                    "id": 683,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1147:7:5",
+                    "src": "1197:7:10",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -122,12 +139,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 318,
+                  "id": 686,
+                  "mutability": "mutable",
                   "name": "_from",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 327,
-                  "src": "1170:13:5",
+                  "scope": 695,
+                  "src": "1220:13:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -135,10 +153,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 317,
+                    "id": 685,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1170:7:5",
+                    "src": "1220:7:10",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -150,12 +168,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 320,
+                  "id": 688,
+                  "mutability": "mutable",
                   "name": "_tokenId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 327,
-                  "src": "1189:16:5",
+                  "scope": 695,
+                  "src": "1239:16:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -163,10 +182,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 319,
+                    "id": 687,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1189:7:5",
+                    "src": "1239:7:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -177,12 +196,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 322,
+                  "id": 690,
+                  "mutability": "mutable",
                   "name": "_data",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 327,
-                  "src": "1211:20:5",
+                  "scope": 695,
+                  "src": "1261:20:10",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -190,10 +210,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 321,
+                    "id": 689,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1211:5:5",
+                    "src": "1261:5:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -203,20 +223,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1141:94:5"
+              "src": "1191:94:10"
             },
             "returnParameters": {
-              "id": 326,
+              "id": 694,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 325,
+                  "id": 693,
+                  "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 327,
-                  "src": "1261:6:5",
+                  "scope": 695,
+                  "src": "1311:6:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -224,10 +245,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 324,
+                    "id": 692,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1261:6:5",
+                    "src": "1311:6:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -237,60 +258,75 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1260:8:5"
+              "src": "1310:8:10"
             },
-            "scope": 328,
-            "src": "1116:153:5",
+            "scope": 696,
+            "src": "1166:153:10",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 329,
-        "src": "157:1115:5"
+        "scope": 697,
+        "src": "207:1115:10"
       }
     ],
-    "src": "0:1273:5"
+    "src": "40:1283:10"
   },
   "legacyAST": {
-    "absolutePath": "/mnt/c/Users/Sam/Documents/crypto-clicker/node_modules/@0xcert/ethereum-erc721/src/contracts/tokens/erc721-token-receiver.sol",
+    "absolutePath": "/mnt/c/Users/Sam/Documents/crypto-clicker/contracts/tokens/erc721-token-receiver.sol",
     "exportedSymbols": {
       "ERC721TokenReceiver": [
-        328
+        696
       ]
     },
-    "id": 329,
+    "id": 697,
+    "license": "UNLICENSED",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 314,
+        "id": 680,
         "literals": [
           "solidity",
-          "0.6",
-          ".2"
+          ">=",
+          "0.4",
+          ".25",
+          "<",
+          "0.7",
+          ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:22:5"
+        "src": "40:32:10"
       },
       {
         "abstract": false,
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "interface",
-        "documentation": "@dev ERC-721 interface for accepting safe transfers.\nSee https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md.",
+        "documentation": {
+          "id": 681,
+          "nodeType": "StructuredDocumentation",
+          "src": "74:132:10",
+          "text": " @dev ERC-721 interface for accepting safe transfers.\n See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md."
+        },
         "fullyImplemented": false,
-        "id": 328,
+        "id": 696,
         "linearizedBaseContracts": [
-          328
+          696
         ],
         "name": "ERC721TokenReceiver",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": null,
-            "documentation": "@dev Handle the receipt of a NFT. The ERC721 smart contract calls this function on the\nrecipient after a `transfer`. This function MAY throw to revert and reject the transfer. Return\nof other than the magic value MUST result in the transaction being reverted.\nReturns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))` unless throwing.\n@notice The contract address is always the message sender. A wallet/broker/auction application\nMUST implement the wallet interface if it will accept safe transfers.\n@param _operator The address which called `safeTransferFrom` function.\n@param _from The address which previously owned the token.\n@param _tokenId The NFT identifier which is being transferred.\n@param _data Additional data with no specified format.\n@return Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`.",
+            "documentation": {
+              "id": 682,
+              "nodeType": "StructuredDocumentation",
+              "src": "242:921:10",
+              "text": " @dev Handle the receipt of a NFT. The ERC721 smart contract calls this function on the\n recipient after a `transfer`. This function MAY throw to revert and reject the transfer. Return\n of other than the magic value MUST result in the transaction being reverted.\n Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))` unless throwing.\n @notice The contract address is always the message sender. A wallet/broker/auction application\n MUST implement the wallet interface if it will accept safe transfers.\n @param _operator The address which called `safeTransferFrom` function.\n @param _from The address which previously owned the token.\n @param _tokenId The NFT identifier which is being transferred.\n @param _data Additional data with no specified format.\n @return Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`."
+            },
             "functionSelector": "150b7a02",
-            "id": 327,
+            "id": 695,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -298,17 +334,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 323,
+              "id": 691,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 316,
+                  "id": 684,
+                  "mutability": "mutable",
                   "name": "_operator",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 327,
-                  "src": "1147:17:5",
+                  "scope": 695,
+                  "src": "1197:17:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -316,10 +353,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 315,
+                    "id": 683,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1147:7:5",
+                    "src": "1197:7:10",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -331,12 +368,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 318,
+                  "id": 686,
+                  "mutability": "mutable",
                   "name": "_from",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 327,
-                  "src": "1170:13:5",
+                  "scope": 695,
+                  "src": "1220:13:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -344,10 +382,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 317,
+                    "id": 685,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1170:7:5",
+                    "src": "1220:7:10",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -359,12 +397,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 320,
+                  "id": 688,
+                  "mutability": "mutable",
                   "name": "_tokenId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 327,
-                  "src": "1189:16:5",
+                  "scope": 695,
+                  "src": "1239:16:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -372,10 +411,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 319,
+                    "id": 687,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1189:7:5",
+                    "src": "1239:7:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -386,12 +425,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 322,
+                  "id": 690,
+                  "mutability": "mutable",
                   "name": "_data",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 327,
-                  "src": "1211:20:5",
+                  "scope": 695,
+                  "src": "1261:20:10",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -399,10 +439,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 321,
+                    "id": 689,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1211:5:5",
+                    "src": "1261:5:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -412,20 +452,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1141:94:5"
+              "src": "1191:94:10"
             },
             "returnParameters": {
-              "id": 326,
+              "id": 694,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 325,
+                  "id": 693,
+                  "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 327,
-                  "src": "1261:6:5",
+                  "scope": 695,
+                  "src": "1311:6:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -433,10 +474,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 324,
+                    "id": 692,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1261:6:5",
+                    "src": "1311:6:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -446,30 +487,31 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1260:8:5"
+              "src": "1310:8:10"
             },
-            "scope": 328,
-            "src": "1116:153:5",
+            "scope": 696,
+            "src": "1166:153:10",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 329,
-        "src": "157:1115:5"
+        "scope": 697,
+        "src": "207:1115:10"
       }
     ],
-    "src": "0:1273:5"
+    "src": "40:1283:10"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
+    "version": "0.6.11+commit.5ef660b1.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T02:59:31.008Z",
+  "updatedAt": "2020-07-18T09:03:10.289Z",
   "devdoc": {
     "details": "ERC-721 interface for accepting safe transfers. See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md.",
+    "kind": "dev",
     "methods": {
       "onERC721Received(address,address,uint256,bytes)": {
         "details": "Handle the receipt of a NFT. The ERC721 smart contract calls this function on the recipient after a `transfer`. This function MAY throw to revert and reject the transfer. Return of other than the magic value MUST result in the transaction being reverted. Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))` unless throwing.",
@@ -483,13 +525,16 @@
           "_0": "Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`."
         }
       }
-    }
+    },
+    "version": 1
   },
   "userdoc": {
+    "kind": "user",
     "methods": {
       "onERC721Received(address,address,uint256,bytes)": {
         "notice": "The contract address is always the message sender. A wallet/broker/auction application MUST implement the wallet interface if it will accept safe transfers."
       }
-    }
+    },
+    "version": 1
   }
 }

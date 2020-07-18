@@ -21,52 +21,68 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"_interfaceID\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"A standard for detecting smart contract interfaces.  See: https://eips.ethereum.org/EIPS/eip-165.\",\"methods\":{\"supportsInterface(bytes4)\":{\"details\":\"Checks if the smart contract includes a specific interface.\",\"params\":{\"_interfaceID\":\"The interface identifier, as specified in ERC-165.\"},\"returns\":{\"_0\":\"True if _interfaceID is supported, false otherwise.\"}}}},\"userdoc\":{\"methods\":{\"supportsInterface(bytes4)\":{\"notice\":\"This function uses less than 30,000 gas.\"}}}},\"settings\":{\"compilationTarget\":{\"/mnt/c/Users/Sam/Documents/crypto-clicker/node_modules/@0xcert/ethereum-erc721/src/contracts/utils/erc165.sol\":\"ERC165\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/c/Users/Sam/Documents/crypto-clicker/node_modules/@0xcert/ethereum-erc721/src/contracts/utils/erc165.sol\":{\"keccak256\":\"0x27b1eeda591f5533c25857fb9f6a8cb21ace7358a151ffdf0b52011a4fafb761\",\"urls\":[\"bzz-raw://e711c3df544325c72fbbab7b5506668799360ef6a1c89312db1adcb28064acea\",\"dweb:/ipfs/QmcSWFEb239xsVyuSEPAqRVqAcQQPHfGDr1nhG76aLGq3f\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.11+commit.5ef660b1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"_interfaceID\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"A standard for detecting smart contract interfaces. See: https://eips.ethereum.org/EIPS/eip-165.\",\"kind\":\"dev\",\"methods\":{\"supportsInterface(bytes4)\":{\"details\":\"Checks if the smart contract includes a specific interface.\",\"params\":{\"_interfaceID\":\"The interface identifier, as specified in ERC-165.\"},\"returns\":{\"_0\":\"True if _interfaceID is supported, false otherwise.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"supportsInterface(bytes4)\":{\"notice\":\"This function uses less than 30,000 gas.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/c/Users/Sam/Documents/crypto-clicker/contracts/utils/erc165.sol\":\"ERC165\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/c/Users/Sam/Documents/crypto-clicker/contracts/utils/erc165.sol\":{\"keccak256\":\"0x4200e6e09ecb88dd6e25a2f20cfb7b629195642759f827167b80e729cd28db2d\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://399a7e65a6b7a22634b14e8580a363062a576a944c65422646599ea1e9f3a976\",\"dweb:/ipfs/QmWSfoALnPfyBCVsyoWmc9P3VHEwgSWM5J9LoU6Rtnnnax\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
+  "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity 0.6.2;\n\n/**\n * @dev A standard for detecting smart contract interfaces. \n * See: https://eips.ethereum.org/EIPS/eip-165.\n */\ninterface ERC165\n{\n\n  /**\n   * @dev Checks if the smart contract includes a specific interface.\n   * @notice This function uses less than 30,000 gas.\n   * @param _interfaceID The interface identifier, as specified in ERC-165.\n   * @return True if _interfaceID is supported, false otherwise.\n   */\n  function supportsInterface(\n    bytes4 _interfaceID\n  )\n    external\n    view\n    returns (bool);\n    \n}\n",
-  "sourcePath": "/mnt/c/Users/Sam/Documents/crypto-clicker/node_modules/@0xcert/ethereum-erc721/src/contracts/utils/erc165.sol",
+  "source": "// SPDX-License-Identifier: UNLICENSED\n\npragma solidity >=0.4.25 <0.7.0;\n\n/**\n * @dev A standard for detecting smart contract interfaces.\n * See: https://eips.ethereum.org/EIPS/eip-165.\n */\ninterface ERC165\n{\n\n  /**\n   * @dev Checks if the smart contract includes a specific interface.\n   * @notice This function uses less than 30,000 gas.\n   * @param _interfaceID The interface identifier, as specified in ERC-165.\n   * @return True if _interfaceID is supported, false otherwise.\n   */\n  function supportsInterface(\n    bytes4 _interfaceID\n  )\n    external\n    view\n    returns (bool);\n    \n}\n",
+  "sourcePath": "/mnt/c/Users/Sam/Documents/crypto-clicker/contracts/utils/erc165.sol",
   "ast": {
-    "absolutePath": "/mnt/c/Users/Sam/Documents/crypto-clicker/node_modules/@0xcert/ethereum-erc721/src/contracts/utils/erc165.sol",
+    "absolutePath": "/mnt/c/Users/Sam/Documents/crypto-clicker/contracts/utils/erc165.sol",
     "exportedSymbols": {
       "ERC165": [
-        1268
+        2021
       ]
     },
-    "id": 1269,
+    "id": 2022,
+    "license": "UNLICENSED",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1260,
+        "id": 2011,
         "literals": [
           "solidity",
-          "0.6",
-          ".2"
+          ">=",
+          "0.4",
+          ".25",
+          "<",
+          "0.7",
+          ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:22:10"
+        "src": "40:32:16"
       },
       {
         "abstract": false,
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "interface",
-        "documentation": "@dev A standard for detecting smart contract interfaces. \nSee: https://eips.ethereum.org/EIPS/eip-165.",
+        "documentation": {
+          "id": 2012,
+          "nodeType": "StructuredDocumentation",
+          "src": "74:115:16",
+          "text": " @dev A standard for detecting smart contract interfaces.\n See: https://eips.ethereum.org/EIPS/eip-165."
+        },
         "fullyImplemented": false,
-        "id": 1268,
+        "id": 2021,
         "linearizedBaseContracts": [
-          1268
+          2021
         ],
         "name": "ERC165",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": null,
-            "documentation": "@dev Checks if the smart contract includes a specific interface.\n@notice This function uses less than 30,000 gas.\n@param _interfaceID The interface identifier, as specified in ERC-165.\n@return True if _interfaceID is supported, false otherwise.",
+            "documentation": {
+              "id": 2013,
+              "nodeType": "StructuredDocumentation",
+              "src": "212:274:16",
+              "text": " @dev Checks if the smart contract includes a specific interface.\n @notice This function uses less than 30,000 gas.\n @param _interfaceID The interface identifier, as specified in ERC-165.\n @return True if _interfaceID is supported, false otherwise."
+            },
             "functionSelector": "01ffc9a7",
-            "id": 1267,
+            "id": 2020,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -74,17 +90,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1263,
+              "id": 2016,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1262,
+                  "id": 2015,
+                  "mutability": "mutable",
                   "name": "_interfaceID",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1267,
-                  "src": "472:19:10",
+                  "scope": 2020,
+                  "src": "521:19:16",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -92,10 +109,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 1261,
+                    "id": 2014,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "472:6:10",
+                    "src": "521:6:16",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -105,20 +122,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "466:29:10"
+              "src": "515:29:16"
             },
             "returnParameters": {
-              "id": 1266,
+              "id": 2019,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1265,
+                  "id": 2018,
+                  "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1267,
-                  "src": "531:4:10",
+                  "scope": 2020,
+                  "src": "580:4:16",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -126,10 +144,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1264,
+                    "id": 2017,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "531:4:10",
+                    "src": "580:4:16",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -139,60 +157,75 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "530:6:10"
+              "src": "579:6:16"
             },
-            "scope": 1268,
-            "src": "440:97:10",
+            "scope": 2021,
+            "src": "489:97:16",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 1269,
-        "src": "141:403:10"
+        "scope": 2022,
+        "src": "190:403:16"
       }
     ],
-    "src": "0:545:10"
+    "src": "40:554:16"
   },
   "legacyAST": {
-    "absolutePath": "/mnt/c/Users/Sam/Documents/crypto-clicker/node_modules/@0xcert/ethereum-erc721/src/contracts/utils/erc165.sol",
+    "absolutePath": "/mnt/c/Users/Sam/Documents/crypto-clicker/contracts/utils/erc165.sol",
     "exportedSymbols": {
       "ERC165": [
-        1268
+        2021
       ]
     },
-    "id": 1269,
+    "id": 2022,
+    "license": "UNLICENSED",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1260,
+        "id": 2011,
         "literals": [
           "solidity",
-          "0.6",
-          ".2"
+          ">=",
+          "0.4",
+          ".25",
+          "<",
+          "0.7",
+          ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:22:10"
+        "src": "40:32:16"
       },
       {
         "abstract": false,
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "interface",
-        "documentation": "@dev A standard for detecting smart contract interfaces. \nSee: https://eips.ethereum.org/EIPS/eip-165.",
+        "documentation": {
+          "id": 2012,
+          "nodeType": "StructuredDocumentation",
+          "src": "74:115:16",
+          "text": " @dev A standard for detecting smart contract interfaces.\n See: https://eips.ethereum.org/EIPS/eip-165."
+        },
         "fullyImplemented": false,
-        "id": 1268,
+        "id": 2021,
         "linearizedBaseContracts": [
-          1268
+          2021
         ],
         "name": "ERC165",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": null,
-            "documentation": "@dev Checks if the smart contract includes a specific interface.\n@notice This function uses less than 30,000 gas.\n@param _interfaceID The interface identifier, as specified in ERC-165.\n@return True if _interfaceID is supported, false otherwise.",
+            "documentation": {
+              "id": 2013,
+              "nodeType": "StructuredDocumentation",
+              "src": "212:274:16",
+              "text": " @dev Checks if the smart contract includes a specific interface.\n @notice This function uses less than 30,000 gas.\n @param _interfaceID The interface identifier, as specified in ERC-165.\n @return True if _interfaceID is supported, false otherwise."
+            },
             "functionSelector": "01ffc9a7",
-            "id": 1267,
+            "id": 2020,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -200,17 +233,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1263,
+              "id": 2016,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1262,
+                  "id": 2015,
+                  "mutability": "mutable",
                   "name": "_interfaceID",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1267,
-                  "src": "472:19:10",
+                  "scope": 2020,
+                  "src": "521:19:16",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -218,10 +252,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 1261,
+                    "id": 2014,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "472:6:10",
+                    "src": "521:6:16",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -231,20 +265,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "466:29:10"
+              "src": "515:29:16"
             },
             "returnParameters": {
-              "id": 1266,
+              "id": 2019,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1265,
+                  "id": 2018,
+                  "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1267,
-                  "src": "531:4:10",
+                  "scope": 2020,
+                  "src": "580:4:16",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -252,10 +287,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1264,
+                    "id": 2017,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "531:4:10",
+                    "src": "580:4:16",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -265,30 +300,31 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "530:6:10"
+              "src": "579:6:16"
             },
-            "scope": 1268,
-            "src": "440:97:10",
+            "scope": 2021,
+            "src": "489:97:16",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 1269,
-        "src": "141:403:10"
+        "scope": 2022,
+        "src": "190:403:16"
       }
     ],
-    "src": "0:545:10"
+    "src": "40:554:16"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
+    "version": "0.6.11+commit.5ef660b1.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T02:59:31.050Z",
+  "updatedAt": "2020-07-18T09:09:14.329Z",
   "devdoc": {
-    "details": "A standard for detecting smart contract interfaces.  See: https://eips.ethereum.org/EIPS/eip-165.",
+    "details": "A standard for detecting smart contract interfaces. See: https://eips.ethereum.org/EIPS/eip-165.",
+    "kind": "dev",
     "methods": {
       "supportsInterface(bytes4)": {
         "details": "Checks if the smart contract includes a specific interface.",
@@ -299,13 +335,16 @@
           "_0": "True if _interfaceID is supported, false otherwise."
         }
       }
-    }
+    },
+    "version": 1
   },
   "userdoc": {
+    "kind": "user",
     "methods": {
       "supportsInterface(bytes4)": {
         "notice": "This function uses less than 30,000 gas."
       }
-    }
+    },
+    "version": 1
   }
 }

@@ -2,10 +2,10 @@
 
 pragma solidity >=0.4.25 <0.7.0;
 
-import "../node_modules/@0xcert/ethereum-erc721/src/contracts/tokens/nf-token-metadata.sol";
-import "../node_modules/@0xcert/ethereum-erc721/src/contracts/ownership/ownable.sol";
-import "../node_modules/@0xcert/ethereum-erc721/src/contracts/utils/address-utils.sol";
-import "../node_modules/@0xcert/ethereum-erc721/src/contracts/math/safe-math.sol";
+import "./tokens/nf-token-metadata.sol";
+import "./ownership/ownable.sol";
+import "./utils/address-utils.sol";
+import "./math/safe-math.sol";
 
 contract ElderCoin is
     NFTokenMetadata,
