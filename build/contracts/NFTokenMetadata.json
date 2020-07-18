@@ -3022,94 +3022,12 @@
         }
       },
       "links": {},
-      "address": "0x35CB3229fC18C6Ce739135f4DD72EE3095b72db7",
-      "transactionHash": "0xd6884b71ccb13dc6d21e99b1bdfc8c410357dac5e09aedc25451a57b23fbc4b0"
-    },
-    "1595038350520": {
-      "events": {
-        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_owner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_approved",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "uint256",
-              "name": "_tokenId",
-              "type": "uint256"
-            }
-          ],
-          "name": "Approval",
-          "type": "event"
-        },
-        "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_owner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_operator",
-              "type": "address"
-            },
-            {
-              "indexed": false,
-              "internalType": "bool",
-              "name": "_approved",
-              "type": "bool"
-            }
-          ],
-          "name": "ApprovalForAll",
-          "type": "event"
-        },
-        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_from",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_to",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "uint256",
-              "name": "_tokenId",
-              "type": "uint256"
-            }
-          ],
-          "name": "Transfer",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0x89ceEFC6245eaF98d1dF1a40B4299809B1CC4697",
-      "transactionHash": "0x294d63a1ca4e460bb37a2345edcb1619caf742b894eedd1bd5638172fdd8c29b"
+      "address": "0xD1c5C5fD1FD3590f87b7B87cABE9497e928a00a3",
+      "transactionHash": "0x5bb663c1f6f748070975428ef6268020fcc30725b8a9d115ff2473a7ba2f37cf"
     }
   },
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T02:37:20.959Z",
+  "updatedAt": "2020-07-18T03:00:03.436Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Optional metadata implementation for ERC-721 non-fungible token standard.",

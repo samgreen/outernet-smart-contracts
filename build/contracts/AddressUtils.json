@@ -904,18 +904,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x5e5B86eEA8DD9076802dD9099414B0aa85fDB9B8",
-      "transactionHash": "0x81f99da5bd52e571355af3bbeab058a08f3569431ff51da42a5a5edf32808829"
-    },
-    "1595038350520": {
-      "events": {},
-      "links": {},
-      "address": "0xBED8392E2487754C979f1D91BEa53f1E7ba56d3D",
-      "transactionHash": "0x41d900f0eb3b400d110ba06bc4b0bf9dd94ca8de9d39220b2491116ba04c31b9"
+      "address": "0x98630cAa56543204fd31af8f787ab7B2d341a4fF",
+      "transactionHash": "0xa31dce280e66c55e133d1a62a0479e5c7c8d087cff2d6d6aa2fbd24cebb49481"
     }
   },
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T02:37:20.950Z",
+  "updatedAt": "2020-07-18T03:00:03.427Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Utility library of inline functions on addresses.",

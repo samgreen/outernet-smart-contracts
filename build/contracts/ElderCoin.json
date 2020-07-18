@@ -1844,113 +1844,12 @@
         }
       },
       "links": {},
-      "address": "0x9206E48A1Ca76060aa1383ea427B87e0293BdCcC",
-      "transactionHash": "0xfb6be5884c6646dc4fcbdd76334285e2864e43268c00da0e60c2d94ea73ddb69"
-    },
-    "1595038350520": {
-      "events": {
-        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_owner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_approved",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "uint256",
-              "name": "_tokenId",
-              "type": "uint256"
-            }
-          ],
-          "name": "Approval",
-          "type": "event"
-        },
-        "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_owner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_operator",
-              "type": "address"
-            },
-            {
-              "indexed": false,
-              "internalType": "bool",
-              "name": "_approved",
-              "type": "bool"
-            }
-          ],
-          "name": "ApprovalForAll",
-          "type": "event"
-        },
-        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "previousOwner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "newOwner",
-              "type": "address"
-            }
-          ],
-          "name": "OwnershipTransferred",
-          "type": "event"
-        },
-        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_from",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_to",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "uint256",
-              "name": "_tokenId",
-              "type": "uint256"
-            }
-          ],
-          "name": "Transfer",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0x6FbE60e752dEfB632fCb763d9C929b397F841df3",
-      "transactionHash": "0xfcc0dd22e446af7a0cf9e97036b54e3025dc144ea69fdfd75b296962f0947318"
+      "address": "0xecC39eF8A50c4cbf67f0771A42CcE52d8a3e2665",
+      "transactionHash": "0x8aa28ed975ed5d4937b1c44faa5835c24260abfdf8b9a1ced6b7ca82c5b30504"
     }
   },
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T02:37:33.445Z",
+  "updatedAt": "2020-07-18T03:00:04.135Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {

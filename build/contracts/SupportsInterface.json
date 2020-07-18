@@ -806,18 +806,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xcba0BB31bD5CB195608932019b35ff1A48e4965D",
-      "transactionHash": "0x7774f79071912628b92f9cb24c99a2cfc4d0722dafb64908211e0e6ee4b1bfef"
-    },
-    "1595038350520": {
-      "events": {},
-      "links": {},
-      "address": "0x45981C9dC500a107F68782651777e07c77429b11",
-      "transactionHash": "0xe3b9cc295293071c458968e830970b56adb095ee52e53faa6453863ecb84b859"
+      "address": "0x8e5FC0B7dC1709d7F98Ab4C5Df2Fcb3EBB22f615",
+      "transactionHash": "0x17698e1142583ecb5f9bd08cc8d9e6d3bc16b42e544beefad3904df74fb3aa37"
     }
   },
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T02:37:20.942Z",
+  "updatedAt": "2020-07-18T03:00:03.419Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Implementation of standard for detect smart contract interfaces.",

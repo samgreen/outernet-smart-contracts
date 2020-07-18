@@ -1800,38 +1800,12 @@
         }
       },
       "links": {},
-      "address": "0x7ba70fAa3D27636e35b02Ce31f9aB53BbD36d67d",
-      "transactionHash": "0x2e3232140120c2fda9cc590a427bce885b0e986edc5799bf9cea8e289de50de7"
-    },
-    "1595038350520": {
-      "events": {
-        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "previousOwner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "newOwner",
-              "type": "address"
-            }
-          ],
-          "name": "OwnershipTransferred",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0x7ca8DFbd27b56e0089a551B9AbDa9Af7B5309471",
-      "transactionHash": "0xe518ab3f25c3557fc69b771a8c17294a7056b7dee390f1038dac9747473a0829"
+      "address": "0x172f13F01f37f2b325C8E0fF015872008175800a",
+      "transactionHash": "0xde504e61413911de2e5843938221214cb766e81ccbfafcfcee5545077c8549e1"
     }
   },
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T02:37:20.931Z",
+  "updatedAt": "2020-07-18T03:00:03.406Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "The contract has an owner address, and provides basic authorization control whitch simplifies the implementation of user permissions. This contract is based on the source code at: https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/ownership/Ownable.sol",
