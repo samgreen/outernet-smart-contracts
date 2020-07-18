@@ -2785,7 +2785,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T01:38:55.053Z",
+  "updatedAt": "2020-07-18T02:21:58.585Z",
   "devdoc": {
     "details": "ERC-721 non-fungible token standard. See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md.",
     "methods": {

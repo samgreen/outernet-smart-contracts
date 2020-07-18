@@ -906,10 +906,16 @@
       "links": {},
       "address": "0x5e5B86eEA8DD9076802dD9099414B0aa85fDB9B8",
       "transactionHash": "0x81f99da5bd52e571355af3bbeab058a08f3569431ff51da42a5a5edf32808829"
+    },
+    "1595038350520": {
+      "events": {},
+      "links": {},
+      "address": "0xBED8392E2487754C979f1D91BEa53f1E7ba56d3D",
+      "transactionHash": "0x41d900f0eb3b400d110ba06bc4b0bf9dd94ca8de9d39220b2491116ba04c31b9"
     }
   },
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T01:39:15.999Z",
+  "updatedAt": "2020-07-18T02:37:20.950Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Utility library of inline functions on addresses.",

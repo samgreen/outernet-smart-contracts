@@ -3642,10 +3642,16 @@
       "links": {},
       "address": "0x4C9C385AFf7436fbcb9F19A1887451215cD837d0",
       "transactionHash": "0x00fb8d2da5255ab0370b870a3ac9469eec2075fe99d92e289b0150ffadd8c19d"
+    },
+    "1595038350520": {
+      "events": {},
+      "links": {},
+      "address": "0x18fBB57BD34fE6B6d42C20b7F4CeabA92D9426f2",
+      "transactionHash": "0x8dc2d71761da393fd00400066c694680749b762879ca4a7b9071293d407dac51"
     }
   },
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T01:39:15.982Z",
+  "updatedAt": "2020-07-18T02:37:20.934Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Math operations with safety checks that throw on error. This contract is based on the source code at: https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/math/SafeMath.sol.",
