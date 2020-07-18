@@ -12,6 +12,8 @@
     "test:ropsten": "truffle test --network ropsten",
     "deploy:teams": "truffle migrate --network teams",
     "deploy:ropsten": "truffle migrate --network ropsten",
+    "verify": "truffle run verify ElderCoin",
+    "verify:ropsten": "truffle run verify ElderCoin",
     "clean": "rm -rf ./build/ && npm run compile"
   },
   "author": "",

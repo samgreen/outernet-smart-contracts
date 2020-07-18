@@ -2059,7 +2059,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-18T09:10:29.261Z",
+  "updatedAt": "2020-07-18T09:49:54.677Z",
   "devdoc": {
     "details": "This is an example contract implementation of NFToken with metadata extension.",
     "kind": "dev",
